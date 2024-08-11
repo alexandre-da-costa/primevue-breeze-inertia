@@ -70,7 +70,7 @@ onMounted(() => {
                     :invalid="Boolean(form.errors.name)"
                     autocomplete="name"
                 />
-                <InputError class="mt-2" :message="form.errors?.name" />
+                <InputError class="mt-2" :messages="form.errors?.name" />
             </div>
             <div>
                 <label for="email" class="block mb-2">Email</label>
@@ -83,7 +83,7 @@ onMounted(() => {
                     :invalid="Boolean(form.errors.email)"
                     autocomplete="username"
                 />
-                <InputError class="mt-2" :message="form.errors?.email" />
+                <InputError class="mt-2" :messages="form.errors?.email" />
             </div>
 
             <div v-if="mustVerifyEmail && user.email_verified_at === null">

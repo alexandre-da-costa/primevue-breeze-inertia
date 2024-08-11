@@ -41,7 +41,7 @@ onMounted(() => {
                     required
                     autocomplete="name"
                 />
-                <InputError class="mt-2" :message="form.errors.name" />
+                <InputError class="mt-2" :messages="form.errors.name" />
             </div>
 
             <div class="mb-6">
@@ -55,7 +55,7 @@ onMounted(() => {
                     required
                     autocomplete="username"
                 />
-                <InputError class="mt-2" :message="form.errors.email" />
+                <InputError class="mt-2" :messages="form.errors.email" />
             </div>
 
             <div class="mb-6">
@@ -69,7 +69,7 @@ onMounted(() => {
                     required
                     autocomplete="new-password"
                 />
-                <InputError class="mt-2 mb-1" :message="form.errors.password" />
+                <InputError class="mt-2 mb-1" :messages="form.errors.password" />
             </div>
 
             <div class="mb-6">
@@ -87,7 +87,7 @@ onMounted(() => {
                 />
                 <InputError
                     class="mt-2 mb-1"
-                    :message="form.errors.password_confirmation"
+                    :messages="form.errors.password_confirmation"
                 />
             </div>
 

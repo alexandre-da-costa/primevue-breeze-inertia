@@ -73,7 +73,7 @@ const updatePassword = () => {
                 />
                 <InputError
                     class="mt-2"
-                    :message="form.errors?.current_password"
+                    :messages="form.errors?.current_password"
                 />
             </div>
 
@@ -89,7 +89,7 @@ const updatePassword = () => {
                     :invalid="Boolean(form.errors.password)"
                     autocomplete="new-password"
                 />
-                <InputError class="mt-2" :message="form.errors?.password" />
+                <InputError class="mt-2" :messages="form.errors?.password" />
             </div>
 
             <div>
@@ -107,7 +107,7 @@ const updatePassword = () => {
                 />
                 <InputError
                     class="mt-2"
-                    :message="form.errors?.password_confirmation"
+                    :messages="form.errors?.password_confirmation"
                 />
             </div>
 

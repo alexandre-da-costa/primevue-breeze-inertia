@@ -61,7 +61,7 @@ watch(modalOpen, (newModalOpen) => {
                     autocomplete="current-password"
                     @keyup.enter="deleteUser"
                 />
-                <InputError class="mt-2" :message="form.errors.password" />
+                <InputError class="mt-2" :messages="form.errors.password" />
             </div>
 
             <template #footer>
